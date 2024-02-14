@@ -1,0 +1,242 @@
+/* <uniquifier>: Use a uniquifier for the class name*/
+/* <weight>: Use a value from 100 to 900*/
+
+
+html, body {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+h2{
+  margin: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+
+img{
+  margin-bottom: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+
+
+.text-middle img {
+  position: relative;
+}
+
+.text-middle h2{
+  position: absolute !important;
+  z-index: 1;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.hide
+{
+  display: none;
+}
+
+
+/*Buson*/
+#buson{
+  cursor: pointer;
+}
+
+
+/*Buson con carta*/
+/* #buson_carta_cerrada
+{
+  position: relative;
+  top: 0;
+  left: 0;
+} */
+
+#buson_carta_cerrada *:nth-child(1)
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+/* #buson_carta_cerrada *:nth-child(1) h2
+{
+  position: absolute;
+  top: 50% !important;
+} */
+
+.main-letter-div
+{
+  position: absolute;
+  left: 0;
+  right: 0;
+  /*background-color: black;*/
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.main-letter-div
+{
+  animation: carta_saliendo 2s forwards, pulse2 2s infinite;
+}
+
+.main-letter-div2_without_animation_pulse
+{
+  animation: carta_saliendo 2s forwards, none;
+}
+
+#cuteImg{
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+/*Animations*/
+
+.pulse{
+  animation: pulse 2s infinite;
+}
+
+/*Pulse animation*/
+@keyframes pulse {
+	0% { transform: scale(0.95);}
+	70% {transform: scale(1);}
+	100% {transform: scale(0.95);}
+}
+
+@keyframes pulse2 {
+	0% { transform: scale(0.99);}
+	70% {transform: scale(1);}
+	100% {transform: scale(0.99);}
+}
+
+/*Buson carta saliendo animation*/
+@keyframes carta_saliendo {
+	from {
+    top: -100px;
+    opacity: 0;
+  }  
+  to {  
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+{
+  h2{
+    font-size: 30px;
+  }
+
+  img{
+    height: 400px;
+    margin-bottom: -5px;
+  }
+
+  h2
+  {
+    max-width: 300px;
+  }
+  
+  @keyframes carta_saliendo {
+    from {
+      top: 20px;
+      opacity: 0;
+    }  
+    to {  
+      top: 60px;
+      opacity: 1;
+    }
+  }
+
+  .pocket
+  {
+    height: 2px !important;
+  }
+
+  .close .letter {
+    transform: translateY(-234px);
+    transition: transform 0.4s ease, z-index 1s;
+    z-index: 1;
+  }
+  
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+  h2{
+    font-size: 60px;
+  }
+
+  img{
+    height: 500px;
+    margin-bottom: -30px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1024px) 
+{
+
+  img{
+    height: 900px;
+    margin-bottom: -30px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px), screen and (height: 600px) {
+  img{
+    height: 600px;
+    margin-bottom: -20px;
+  }
+}
+
+@media only screen and (max-width: 1024px), screen and (height: 800px) {
+  img{
+    height: 600px;
+    margin-bottom: -20px;
+  }
+}

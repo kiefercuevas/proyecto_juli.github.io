@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/letter.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>San Valentín</title>
+</head>
+<body>
+  <div class="container">
+
+    <div id="buson" class="text-middle">
+      <h2>Mira, tienes un mensaje en el busón</h2>
+      <img src="imgs/Buson.svg" class="pulse">      
+    </div>
+
+    <div id="buson_carta_cerrada" class="hide">
+      <div class="text-middle">
+        <h2 id="title-letter">Wao!!, has recibido una carta, que será?</h2>
+        <img src="imgs/Buson.svg">
+      </div>
+      <div id="main-letter-container" class="main-letter-div">
+        <div class="envlope-wrapper">
+          <div id="envelope" class="close">
+              <div class="front flap"></div>
+              <div class="front pocket"></div>
+              <div class="letter">
+                  <div class="words line1">Te amo Miamor, Juli!!!</div>
+                  <div class="words line2">Quieres ser mi Valentín?</div>
+                  <div class="words line3">
+                    <img alt="cute" id="cuteImg" src="imgs/cute1.gif" />
+                  </div>
+                  <!-- <div class="words line4"></div> -->
+              </div>
+              <div class="hearts">
+                  <div class="heart a1"></div>
+                  <div class="heart a2"></div>
+                  <div class="heart a3"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- <div id="buson_carta_cerrada" class="text-middle hide">
+      <img src="imgs/Buson.svg">
+      <div>
+        <img src="imgs/carta_cerrada.svg">
+        <h2>Ha salido una carta, que emoción</h2>
+      </div>
+    </div>
+
+    <div id="buson_carta_abierta" class="text-middle hide">
+      <img src="imgs/Buson.svg">
+      <img src="imgs/carta abierta.svg">
+    </div> -->
+
+  </div>
+
+  <script src="js/letter.js"></script>
+  <script src="js/main.js"></script>
+</div>
+</body>
+</html>
